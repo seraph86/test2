@@ -21,7 +21,7 @@ def parse(soup):
         'li', {'class': 's-item'})
     print(len(results))
     for item in results:
-        # print(item.text)
+        print(item.text)
         product = {
             'title': item.find('h3', {'class': 's-item__title'}).text,
             # 'soldprice': item.find('span', {'class': 's-item__price'}).text,
